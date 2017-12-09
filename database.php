@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 $user_name = "root";
 $password = "";
 $database = "patient_system";
@@ -10,4 +11,3 @@ $db_handle = mysql_connect($server, $user_name, $password);
 $db_found = mysql_select_db($database, $db_handle);
 $td = date("Y-m-d");
 ?>
-
